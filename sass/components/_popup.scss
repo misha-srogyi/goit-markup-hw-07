@@ -155,29 +155,28 @@
 .form-checkbox {
   cursor: pointer;
   position: relative;
-}
-
-.form-checkbox__text {
-  margin-left: 24px;
-  font-family: 'Roboto';
+  
+  &__text {
+    margin-left: 24px;
+    font-family: 'Roboto';
   font-weight: 400;
   font-style: normal;
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
   color: $grey-text;
-}
+  }
 
-.form-checkbox__link {
-  font-family: 'Roboto';
+  &__link {
+    font-family: 'Roboto';
   font-weight: 400;
   font-style: normal;
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
   color: $blue-text;
+  }
 }
-
 
 .form-checkbox__input:checked ~ .modal-checkbox .modal-checkbox__icon {
   display: block;
@@ -194,14 +193,13 @@
     position: absolute;
   top: 50%;
   transform: translateY(-50%);
-}
 
-.modal-checkbox__icon{
+  &__icon{
     display: none;
   }
 
-.modal-checkbox__button {
-  display: flex;
+  &__button {
+ display: flex;
   text-align: center;
   margin: 0 auto;
   font-family: 'Roboto';
@@ -218,3 +216,4 @@
   cursor: pointer;
   border: none;
   }
+}
