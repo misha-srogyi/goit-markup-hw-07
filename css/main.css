@@ -292,8 +292,7 @@ img {
   cursor: pointer;
 }
 
-.close-button:hover .close-button__icon,
-.close-button:focus .close-button__icon {
+.close-button:hover .close-button__icon, .close-button:focus .close-button__icon {
   fill: #2196f3;
 }
 
@@ -362,8 +361,7 @@ img {
   border: 1px solid #2196f3;
 }
 
-.wrapper__input:focus + .wrapper__icon,
-.wrapper__input:hover + .wrapper__icon {
+.wrapper__input:focus + .wrapper__icon, .wrapper__input:hover + .wrapper__icon {
   fill: #2196f3;
 }
 
@@ -580,6 +578,189 @@ img {
   text-transform: uppercase;
 }
 
+/* Our Team */
+.our-team {
+  background-color: #f5f4fa;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.our-team-title {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.66;
+  letter-spacing: 0.03em;
+  color: #212121;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.our-team-workers {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: calc(-1 * 50px);
+  margin-left: calc(-1 * 30px);
+}
+
+/* Workers Card */
+.our-team__item {
+  -ms-flex-preferred-size: calc(100% / 4 - 30px);
+      flex-basis: calc(100% / 4 - 30px);
+  margin-top: 50px;
+  margin-left: 30px;
+  background-color: white;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  min-height: 428px;
+}
+
+.workers-card {
+  margin-top: 30px;
+  background-color: white;
+  text-align: center;
+}
+
+.workers-card__name {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+.workers-card__position {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  color: #757575;
+  margin-top: 10px;
+}
+
+/* Іконки соц.мережі робітників */
+.employee-list {
+  list-style-type: none;
+  margin-top: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-color: white;
+}
+
+.employee-list__link {
+  width: 44px;
+  height: 44px;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.employee-list__link:hover .employee-list__icon, .employee-list__link:focus .employee-list__icon {
+  fill: white;
+}
+
+.employee-list__link:hover:hover, .employee-list__link:hover:focus, .employee-list__link:focus:hover, .employee-list__link:focus:focus {
+  background-color: #2196f3;
+}
+
+.employee-list__icon {
+  fill: currentColor;
+  fill: #afb1b8;
+}
+
+/* Regular Customers */
+.regular-customers {
+  padding: 94px 0;
+}
+
+.regular-customers__title {
+  font-family: 'Roboto';
+  font-style: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 3%;
+}
+
+.customers__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 50px -15px 0;
+}
+
+.customers__item {
+  border: 1px solid #afb1b8;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 4px;
+  width: calc(100% / 6 - 30px);
+  height: 90px;
+  margin: 0 15px;
+  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.customers__item:hover {
+  border-color: #2196f3;
+}
+
+.customers__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 170px;
+  height: 90px;
+  color: #2196f3;
+}
+
+.customers__link:hover .customers__icon, .customers__link:focus .customers__icon {
+  fill: #2196f3;
+}
+
 /* Footer */
 .footer {
   background: #2f303a;
@@ -789,177 +970,17 @@ img {
           justify-content: center;
 }
 
-/* Наша Команда */
-.our-team {
-  background-color: #f5f4fa;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.our-team-title {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 1.66;
-  letter-spacing: 0.03em;
-  color: #212121;
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-.our-team-workers {
-  list-style-type: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: calc(-1 * 50px);
-  margin-left: calc(-1 * 30px);
-}
-
-.our-team-item {
-  -ms-flex-preferred-size: calc(100% / 4 - 30px);
-      flex-basis: calc(100% / 4 - 30px);
-  margin-top: 50px;
-  margin-left: 30px;
-  background-color: white;
-  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-  min-height: 428px;
-}
-
-/* Карточки працівників */
-.workers-card {
-  /* width: 270px; */
-  margin-top: 30px;
-  background-color: white;
-  text-align: center;
-}
-
-.name-employee {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.18;
-  letter-spacing: 0.03em;
-  color: #212121;
-}
-
-.position-employee {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.18;
-  letter-spacing: 0.03em;
-  color: #757575;
-  margin-top: 10px;
-}
-
-/* Іконки соц.мережі робітників */
-.employee-link {
-  list-style-type: none;
-  margin-top: 16px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  background-color: white;
-}
-
-/* SVG */
-.employee-icon {
-  fill: currentColor;
-  fill: #afb1b8;
-}
-
-/* .employee-icon {
+/* .employee-list__icon {
   fill: $icon-grey;
 }
-.employee-icon:hover {
+.employee-list__icon:hover {
   fill: $white-text;
 } */
-/* Постійні клієнти */
-.regular-customers {
-  padding: 94px 0;
-}
-
-.regular-customers-title {
-  font-family: 'Roboto';
-  font-style: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  letter-spacing: 3%;
-}
-
-.regular-customers-icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin: 50px -15px 0;
-}
-
-.customers-item {
-  border: 1px solid #afb1b8;
-  text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  border-radius: 4px;
-  width: calc(100% / 6 - 30px);
-  height: 90px;
-  margin: 0 15px;
-  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.customers-item:hover {
-  border-color: #2196f3;
-}
-
-.customers-link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 170px;
-  height: 90px;
-  color: #2196f3;
-}
-
-.customers-link:hover .customers-icon,
-.customers-link:focus .customers-icon {
-  fill: #2196f3;
-}
-
 /* SVG */
-/* .customers-icon:hover {
+/* .customers__icon:hover {
   fill: currentColor;
 } */
-.customers-icon {
+.customers__icon {
   fill: #afb1b8;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1138,7 +1159,7 @@ img {
 }
 
 /* SVG */
-.employee-icon {
+.employee-list__icon {
   fill: currentColor;
   fill: #757575;
 }

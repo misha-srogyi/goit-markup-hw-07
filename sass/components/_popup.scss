@@ -11,12 +11,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
 }
 
-.backdrop.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-}
 
 .modal {
   position: absolute;
@@ -56,12 +57,15 @@
   border: 1px solid $bordre-close-icon;
   border-radius: 100%;
   cursor: pointer;
+  
+  &:hover, 
+  &:focus  {
+    .close-button__icon
+    { fill: $blue-text; }
+    
+  }
 }
 
-.close-button:hover .close-button__icon,
-.close-button:focus .close-button__icon {
-  fill: $blue-text;
-}
 
 .close-button__icon {
   position: absolute;
@@ -123,9 +127,11 @@
    border: $focus-border-input;
   }
   
-  &:focus + .wrapper__icon,
-  &:hover + .wrapper__icon {
-    fill: $blue-text;
+  &:focus,
+  &:hover  {
+    & + .wrapper__icon
+    { fill: $blue-text; }
+    
   }
 }
 
