@@ -7,14 +7,12 @@
   letter-spacing: 0.03em;
   color: $blue-text;
   text-decoration: none;
-
-  .logo__subtext {
-   color: $black-text;
-   
-   &--white {
-       color: $white-text;
-   }
 }
 
+.logo__subtext {
+ color: $black-text;
+ 
+ &--white {
+     color: $white-text;
+ }
 }
-
